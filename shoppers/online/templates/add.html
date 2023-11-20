@@ -1,0 +1,48 @@
+{% extends  'layout.html' %}
+
+{% block body%}
+
+<div class="container">
+
+    <h2 class= "mt=5">add details</h2>
+
+    <form action="" method="post"  class="mt-3" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        <div class="mb-3">
+              <label  class="form-label">Name</label>
+              <input type="name" class="form-control" placeholder="name" name="Name">
+        </div>
+
+        <br>
+        <div class="mb-3">
+              <label  class="form-label">Email address</label>
+              <input type="email" class="form-control" placeholder="name@example.com" name="email">
+        </div>
+                  <br>
+
+        <div class="mb-3">
+              <label  class="form-label">Age</label>
+              <input type="age" class="form-control" placeholder="age" name="age">
+        </div>
+
+             <br>
+
+        <div class="mb-3">
+              <label  class="form-label">profile pic</label name=>
+            <input type="file" class="form-control"  name="image" accept="imaages/png,image/jpeg">
+        </div>
+
+                   <br>
+
+        <div class="mb-3">
+
+              <input type="SUBMIT" class="form-control btn btn-sucess" value="SUBMIT" >
+        </div>
+
+    </form>
+
+    </div>
+
+
+{% endblock %}
